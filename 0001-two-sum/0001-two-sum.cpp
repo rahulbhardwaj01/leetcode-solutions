@@ -4,7 +4,7 @@ public:
     
       vector<int> twoSum(vector<int>& nums, int target) {
                 map<int,int> m;
-                vector<int> v;
+                vector<int> vec;
                 int n= nums.size();
                 for(int i=0;i<n;i++)
                 {
@@ -13,12 +13,12 @@ public:
                         if(m.find(diff) != m.end())
                         {
                         auto p = m.find(diff);        
-                        v.push_back(p->second);
-                        v.push_back(i);
+                        vec.push_back(p->second);
+                        vec.push_back(i);
                         }
                         m.insert(make_pair(nums[i],i));
                 }
           
-                return v;
+                return vec;
 }
 };
