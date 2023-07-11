@@ -1,3 +1,5 @@
+// a bit more timecomplexity other solution used sorting and then compared first and last index strings bcs acc to them lexographical order is followed bby strings::
+
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs)
