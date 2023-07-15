@@ -1,3 +1,6 @@
+// explore other solutijns also with more time complexitiess::
+
+// solution with minimum time complexity:: 
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
