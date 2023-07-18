@@ -14,3 +14,5 @@ public:
         return flag;
     }
 };
+
+// here we can also use binary searchhhh:: try it:
