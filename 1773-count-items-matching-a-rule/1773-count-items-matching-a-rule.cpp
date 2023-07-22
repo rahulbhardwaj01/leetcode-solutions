@@ -27,3 +27,6 @@ public:
         return count;
     }
 };
+// ::::
+// ::::
+// try do it using switch statement alsosooo
