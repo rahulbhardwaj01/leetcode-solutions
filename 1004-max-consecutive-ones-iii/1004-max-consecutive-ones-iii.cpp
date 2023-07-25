@@ -16,3 +16,5 @@ public:
         return j-i;
     }
 };
+
+// o(n) approach using sliding winsdowwww
