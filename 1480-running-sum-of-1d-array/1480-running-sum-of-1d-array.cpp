@@ -11,3 +11,4 @@ public:
         return nums;
     }
 };
+// can also do usingh prefix method of arrays try::
