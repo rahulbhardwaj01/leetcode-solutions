@@ -13,3 +13,5 @@ public:
         return pre;
     }
 };
+
+// heree cant define nex outside the lop bcs curr is changing continuously:::
