@@ -14,10 +14,10 @@ public:
             even = even->next;
         }
         odd->next = even_start;
-        // if(odd->next==NULL){
-        //     odd->next = even_start;
-        //     even->next=NULL;    
-        // }
+        if(odd->next==NULL){
+            odd->next = even_start;
+            even->next=NULL;    
+        }
             //Place the first even node after the last odd node. and we have ti do something more if odd->next==NULL!!!!
         return head; 
     }
