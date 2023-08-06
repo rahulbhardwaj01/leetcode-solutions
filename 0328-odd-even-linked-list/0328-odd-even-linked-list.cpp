@@ -19,6 +19,7 @@ public:
             even->next=NULL;    
         }
             //Place the first even node after the last odd node. and we have ti do something more if odd->next==NULL!!!!
+//         hence wwe have to check this condotion also if the linke dlist is oodd!!!!!!!
         return head; 
     }
 };
