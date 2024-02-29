@@ -9,6 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+// has to revise the treess also 
 // 
 // Time: O(N)
 // Space: O(N)
