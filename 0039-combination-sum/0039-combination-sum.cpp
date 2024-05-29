@@ -1,27 +1,28 @@
 class Solution {
   public:
-    void findCombination(int ind, int target, vector < int > & arr, vector < vector < int >> & ans, vector < int > & ds) {
+    void findCombination(int ind, int target,int sum ,vector < int > & arr, vector < vector < int >> & ans, vector < int > & ds) {
+      if(sum>target){
+        return;
+      }  
       if (ind == arr.size()) {
-        if (target == 0) {
+        if (sum == target) {
           ans.push_back(ds);
         }
         return;
       }
-      // pick up the element 
-      if (arr[ind] <= target) {
+      // pick up the element
+        sum+= arr[ind];
         ds.push_back(arr[ind]);
-        findCombination(ind, target - arr[ind], arr, ans, ds);
+        findCombination(ind, target, sum  , arr, ans, ds);
         ds.pop_back();
-      }
-
-      findCombination(ind + 1, target, arr, ans, ds);
-
+        sum-=arr[ind];
+        findCombination(ind + 1, target,sum,  arr, ans, ds);
     }
   public:
     vector < vector < int >> combinationSum(vector < int > & candidates, int target) {
       vector < vector < int >> ans;
       vector < int > ds;
-      findCombination(0, target, candidates, ans, ds);
+      findCombination(0, target,0, candidates, ans, ds);
       return ans;
     }
 };
